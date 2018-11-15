@@ -10,7 +10,7 @@
 <div>
     <h3>1. Select Your Budget</h3>
     <form [formGroup]="budgetForm" (ngSubmit)="searchFood()">
-      <select formControlName="price">
+      <select formControlName="price" class="budget">
         <option value="select category">What is Your Budget?</option>
         <option value="1">$</option>
         <option value="2">$$</option>
