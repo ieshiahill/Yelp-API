@@ -5,7 +5,7 @@
 
 
 <div class="whatsfordinner">
-<h2>Search for a Local Restaurant in Just 3 Simple Steps!</h2>
+<h1>Search for a Local Restaurant in Just 3 Simple Steps!</h1>
 
 <div>
     <h3>1. Select Your Price Range</h3>
@@ -24,7 +24,7 @@
       <h3>3. Search Your State</h3>
       <label></label>
       <input formControlName="state" placeholder="Enter Your State" class="state"/>
-      <button mat-button color="primary" type="submit" class="button">LET'S EAT</button>
+      <button type="submit" class="button">LET'S EAT</button>
     </form>
 
   <div *ngIf="diner">
@@ -39,7 +39,7 @@
           {{diner.location.zip_code}}</h3>
           <h3>{{diner.hours}}</h3>
           <h3>{{diner.transactions}}</h3>
-          <img src="{{diner.image_url}}"/>
+          <img class="polaroid" src="{{diner.image_url}}" wdith="50%" height="50%"/>
       </div>
     </div>
   </div>
